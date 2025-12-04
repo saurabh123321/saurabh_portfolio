@@ -1,11 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaSun, FaMoon } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
+
+    useEffect(() => {
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+        localStorage.setItem('theme', theme);
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -31,7 +45,7 @@ const Navbar = () => {
                 </Link>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-8">
+                <div className="hidden md:flex items-center space-x-8">
                     {navLinks.map((link) => (
                         <Link
                             key={link.name}
@@ -44,10 +58,24 @@ const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
+                    <button
+                        onClick={toggleTheme}
+                        className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-yellow-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+                        aria-label="Toggle Theme"
+                    >
+                        {theme === 'dark' ? <FaSun /> : <FaMoon />}
+                    </button>
                 </div>
 
                 {/* Mobile Menu Button */}
-                <div className="md:hidden">
+                <div className="md:hidden flex items-center gap-4">
+                    <button
+                        onClick={toggleTheme}
+                        className="p-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-yellow-400 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors"
+                        aria-label="Toggle Theme"
+                    >
+                        {theme === 'dark' ? <FaSun /> : <FaMoon />}
+                    </button>
                     <button onClick={() => setIsOpen(!isOpen)} className="text-slate-800 dark:text-white text-2xl">
                         {isOpen ? <FaTimes /> : <FaBars />}
                     </button>
