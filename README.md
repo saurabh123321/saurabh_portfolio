@@ -39,20 +39,5 @@ src/
     npm run build
     ```
 
-## Customization
+### Live Link - https://saurabh-personal-portfolio.netlify.app/
 
-- **Update Data**: Edit `src/data/resume.js` to update your information.
-- **Change Colors**: Update `tailwind.config.js` to change the primary/secondary colors.
-- **Profile Photo**: Replace `src/assets/profile.jpg` with your new photo.
-
-## Deployment
-
-### Vercel (Recommended)
-
-1.  Push this code to GitHub.
-2.  Import the repository in Vercel.
-3.  Vercel will automatically detect Vite and deploy.
-
-### Netlify
-
-1.  Drag and drop the `dist` folder (created after `npm run build`) to Netlify Drop.

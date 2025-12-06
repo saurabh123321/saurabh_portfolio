@@ -17,7 +17,6 @@ const Contact = () => {
     return (
         <Section id="contact" title="Get In Touch" subtitle="Let's work together">
             <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
-                {/* Contact Info */}
                 <motion.div
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
@@ -85,7 +84,6 @@ const Contact = () => {
                     </div>
                 </motion.div>
 
-                {/* Contact Form */}
                 <motion.div
                     initial={{ opacity: 0, x: 20 }}
                     whileInView={{ opacity: 1, x: 0 }}

@@ -44,7 +44,6 @@ const Navbar = () => {
                     SK
                 </Link>
 
-                {/* Desktop Menu */}
                 <div className="hidden md:flex items-center space-x-8">
                     {navLinks.map((link) => (
                         <Link
@@ -67,7 +66,6 @@ const Navbar = () => {
                     </button>
                 </div>
 
-                {/* Mobile Menu Button */}
                 <div className="md:hidden flex items-center gap-4">
                     <button
                         onClick={toggleTheme}
@@ -82,7 +80,6 @@ const Navbar = () => {
                 </div>
             </div>
 
-            {/* Mobile Menu Overlay */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
