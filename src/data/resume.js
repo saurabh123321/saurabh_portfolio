@@ -25,6 +25,18 @@ export const resumeData = {
     },
     experience: [
         {
+            title: "Software Engineer",
+            company: "Arctera India Pvt. Ltd.",
+            location: "Pune, Maharashtra",
+            period: "October 2025 -- Present",
+            description: [
+                "Developing and enhancing the Data Insight platform focused on large-scale data governance, compliance, and analytics across enterprise storage systems.",
+                "Designed and implemented a Telemetry service to collect operational insights from customer environments, enabling data-driven product improvements and better business decision making.",
+                "Debugged and resolved complex production issues related to file classification, audit pipelines, and workflow processing, improving system stability and reducing recurring failures.",
+                "Built a Python-based utility to simulate CPU and memory spikes, enabling QE teams to reliably reproduce customer issues in-house and accelerate root cause analysis."
+            ]
+        },
+        {
             title: "Associate Software Engineer",
             company: "Siemens Digital Industries Software",
             location: "Pune, Maharashtra",
