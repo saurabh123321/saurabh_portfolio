@@ -4,7 +4,7 @@ export const resumeData = {
     name: "Saurabh Khule",
     role: "Full-Stack Software Engineer",
     profileImage: profileImg,
-    summary: "Full-Stack Software Engineer with 2+ years of development experience in enterprise-grade systems using C++, ReactJS, Java and Python. Proficient in developing reusable UI components, high-performance APIs, and automation scripts that streamline development and boost scalability. Experienced in Agile environments, CI/CD pipelines, and cross-functional collaboration.",
+    summary: "Full-Stack Software Engineer with 3+ years of development experience in enterprise-grade systems using C++, ReactJS, Java and Python. Proficient in developing reusable UI components, high-performance APIs, and automation scripts that streamline development and boost scalability. Experienced in Agile environments, CI/CD pipelines, and cross-functional collaboration.",
     contact: {
         phone: "+91 7888268378",
         email: "saurabhkhule143@gmail.com",
