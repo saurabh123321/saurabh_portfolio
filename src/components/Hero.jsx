@@ -38,14 +38,29 @@ const Hero = () => {
                         {resumeData.summary}
                     </p>
 
-                    <div className="flex gap-4">
+                    <div className="flex flex-wrap gap-4">
                         <Link to="projects" smooth={true} offset={-70} duration={500}>
-                            <button className="px-8 py-3 bg-primary text-white rounded-full font-medium hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-500/30">
+                            <button className="px-6 py-3 bg-primary text-white rounded-full font-medium hover:bg-indigo-700 transition-all shadow-lg hover:shadow-indigo-500/30 flex items-center justify-center gap-2 w-full sm:w-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M10 2a4 4 0 00-4 4v1H5a1 1 0 00-.994.89l-1 9A1 1 0 004 18h12a1 1 0 00.994-1.11l-1-9A1 1 0 0015 7h-1V6a4 4 0 00-4-4zm2 5V6a2 2 0 10-4 0v1h4zm-6 3a1 1 0 112 0 1 1 0 01-2 0zm7-1a1 1 0 100 2 1 1 0 000-2z" clipRule="evenodd" />
+                                </svg>
                                 View Work
                             </button>
                         </Link>
+                        <a href="/resume.pdf" download="Saurabh_Khule_Resume.pdf">
+                            <button className="px-6 py-3 bg-secondary text-white rounded-full font-medium hover:bg-pink-600 transition-all shadow-lg hover:shadow-pink-500/30 flex items-center justify-center gap-2 w-full sm:w-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                                </svg>
+                                Resume
+                            </button>
+                        </a>
                         <Link to="contact" smooth={true} offset={-70} duration={500}>
-                            <button className="px-8 py-3 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 rounded-full font-medium hover:border-primary hover:text-primary transition-all">
+                            <button className="px-6 py-3 border-2 border-slate-300 dark:border-slate-600 text-slate-700 dark:text-slate-300 rounded-full font-medium hover:border-primary hover:text-primary transition-all flex items-center justify-center gap-2 w-full sm:w-auto">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                </svg>
                                 Contact Me
                             </button>
                         </Link>
