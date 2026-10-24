@@ -32,6 +32,7 @@ export const resumeData = {
             description: [
                 "Developing and enhancing the Data Insight platform focused on large-scale data governance, compliance, and analytics across enterprise storage systems.",
                 "Optimized API performance by introducing Guava-based caching, reducing redundant database calls and improving response time from 60 seconds to 1–2 seconds for large data.",
+                "Resolved a critical production performance issue by replacing uncontrolled 50+ thread spawning with a thread pool and timeout-based execution model, preventing UI hangs and improving responsiveness during distributed data collection."
                 "Debugged and resolved complex production issues related to file classification, audit pipelines, and workflow processing, improving system stability and reducing recurring failures.",
                 "Built a Python-based utility to simulate CPU and memory spikes, enabling QE teams to reliably reproduce customer issues in-house and accelerate root cause analysis."
             ]
